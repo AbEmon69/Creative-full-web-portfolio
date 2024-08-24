@@ -1,0 +1,946 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --primarycolor: #FFCC00;
+    --secondarycolor: #353535;
+    --Primaryfont: "Poppins", sans-serif;
+    --secondaryfont: "PT Sans", sans-serif;
+
+
+}
+
+.align {
+    align-items: center;
+}
+
+body {
+    font-family: var(--Primaryfont);
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondarycolor);
+}
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1110px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* nav bar start here */
+.logo {
+    width: 30%;
+}
+
+.menu {
+    width: 70%;
+    text-align: right;
+}
+
+nav .menu li {
+    display: inline-block;
+}
+
+nav .menu li a {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 200%;
+    display: block;
+    text-transform: uppercase;
+    padding: 18px 22px 5px;
+    position: relative;
+
+}
+
+nav .menu li a::before {
+    content: '';
+    width: 0;
+    height: 1px;
+    bottom: 0;
+    position: absolute;
+    background-color: var(--secondarycolor);
+    left: 0;
+    transition: 0.35s;
+}
+
+nav .menu li .active::before,
+nav .menu li:hover a::before {
+    width: 100%;
+}
+
+
+/* nav bar ends here */
+/* main section start here */
+#banner {
+    padding: 56px 0px 156px;
+}
+
+.banner-cnt {
+    width: 53%;
+    color: var(--secondarycolor);
+}
+
+.banner-img {
+    width: 47%;
+}
+
+.banner-cnt h4 {
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.banner-cnt h1 {
+    font-weight: 700;
+    font-size: 64px;
+    margin: 15px 0 25px;
+}
+
+.banner-cnt p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 180%;
+    margin-bottom: 45px;
+}
+
+.btn {
+    background-color: var(--primarycolor);
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+    padding: 16px 45px;
+    display: inline-block;
+
+}
+
+.btn.outline {
+    padding: 16px 18px;
+    background-color: transparent;
+    border: 1px solid var(--secondarycolor);
+    color: var(--secondarycolor);
+    margin-left: 40px;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.icon-cnt h5 {
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--secondarycolor);
+}
+
+.icon img {
+    padding: 5px;
+    align-items: center;
+    margin-top: 20px;
+    background-color: #F4F3F3;
+    ;
+    border-radius: 5px;
+    margin: 5px 20px;
+
+}
+
+/* middle section start */
+
+#sec-title {
+
+    background-image: url('../imagess/Rectangle\ 49.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    margin-top: 140px;
+
+
+
+
+}
+
+.rows {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+
+
+
+}
+
+.section-images img {
+    position: absolute;
+    right: 20px;
+    bottom: 5px;
+
+}
+
+
+
+
+.section-img {
+    width: 50%;
+
+
+}
+
+.section-content {
+    width: 50%;
+    align-items: center;
+    margin: auto;
+
+
+}
+
+.section-title {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 50px;
+    color: var(--secondarycolor);
+}
+
+.section-description {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 190%;
+    color: #353535;
+    margin-bottom: 46px;
+    margin-top: 26px;
+}
+
+.button {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 180%;
+    color: #353535;
+    border: 1px solid black;
+    padding: 17px 44px;
+    border-radius: 20px;
+
+}
+
+/* middle section ended */
+
+/* box-shadow related styles start here */
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 151px;
+    text-align: center;
+    gap: 32px;
+
+}
+
+.box-shadow {
+    border-radius: 20px;
+    width: 400px;
+    height: 367px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.08);
+    background: #fff;
+}
+
+.box-shadow img {
+    margin-top: 39px;
+}
+
+.shadow-title {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 180%;
+    text-align: center;
+    color: #353535;
+    margin-top: 18px;
+    margin-bottom: 14px;
+}
+
+.shadow-description {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 190%;
+    text-align: center;
+    color: #7a7a7a;
+
+}
+
+/* box-shadow related styles end here */
+
+/* branding related styles start here */
+.flex {
+    background: linear-gradient(95.13deg, #FFCC00 -21.46%, #FFF5CB 112.13%);
+    border-radius: 30px;
+    margin-top: 165px;
+    display: flex;
+    gap: 60px;
+    position: relative;
+}
+
+.logo-card img {
+    position: absolute;
+    right: 64px;
+    top: -25px;
+}
+
+.logo-img {
+    width: 50%;
+    padding: 18px 0px 40px;
+    position: relative;
+    top: 50px;
+
+
+}
+
+.logo-title {
+    width: 50%;
+    margin-top: 83px;
+    padding: 10px 50px;
+
+
+}
+
+.logo-content {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 44px;
+    color: #353535;
+
+}
+
+.logo-greeting {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 190%;
+    color: #353535;
+    margin-top: 21px;
+    margin-bottom: 40px;
+
+
+}
+
+.switch {
+    margin-top: 35px;
+}
+
+/* branding related styles end here */
+
+/* what i do related styles start here  */
+.design {
+    margin-top: 140px;
+    display: flex;
+    gap: 200px;
+
+
+}
+
+.design-con {
+    width: 70%;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.design-logo {
+    width: 30%;
+}
+
+.design-img {
+    display: flex;
+    gap: 18px;
+    margin-top: 24px;
+    border-radius: 20px;
+    width: 380px;
+    height: 92px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.08);
+    background: #fff;
+    align-items: center;
+    padding: 20px;
+}
+
+.design-title {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 50px;
+    text-align: right;
+    color: #353535;
+}
+
+.design-discrip {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 190%;
+    text-align: right;
+    color: #353535;
+    margin-top: 26px;
+}
+
+.dis-pro {
+    display: flex;
+    padding: 32px 2px;
+    justify-content: flex-end;
+    text-align: end;
+    gap: 109px;
+}
+
+.pro-title {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 40px;
+    text-align: right;
+    color: #353535;
+}
+
+.pro-dis {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 180%;
+    color: #353535;
+}
+
+/* what i do related styles end here  */
+/* MY work experience related styles start here */
+.work-heading {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 50px;
+    text-align: center;
+    color: #353535;
+    margin-top: 200px;
+}
+
+.works {
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.self {
+    width: 30%;
+}
+
+.self-logo {
+    width: 20%;
+    position: relative;
+    bottom: -100px;
+}
+
+.self-content {
+    width: 65%;
+}
+
+.self-title {
+    margin-top: 116px;
+}
+
+.self-tit {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 180%;
+    color: #353535;
+}
+
+.self-dis {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 180%;
+    color: #7a7a7a;
+    margin-top: 12px;
+}
+
+.self-cont {
+    margin-top: 90px;
+}
+
+/* my work experience related styles end here */
+
+/* my expert areas start here */
+.expert {
+    display: flex;
+    margin-top: 200px;
+    gap: 140px;
+}
+
+.expert-content {
+    width: 60%;
+    align-items: center;
+}
+
+.expert-description {
+    width: 40%;
+
+}
+
+.expert-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.edu {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 180%;
+    color: #353535;
+}
+
+.figma {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.figma1 {
+    display: flex;
+    margin-top: 40px;
+    gap: 130px;
+}
+
+.ex-title {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 50px;
+    color: #353535;
+}
+
+.ex-discrip {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 200%;
+    color: #7a7a7a;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.download-btn {
+    border-radius: 12px;
+    width: 180px;
+    height: 49px;
+    padding: 10px 30px;
+
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 180%;
+    color: #fff;
+    background-color: #fc0;
+}
+
+.button1 {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 180%;
+    color: #353535;
+    border: 1px solid black;
+    padding: 10px 50px;
+    border-radius: 18px;
+}
+
+/* my expert areas ended here */
+/* my services start here */
+#services {
+    background-color: #fff7d5;
+    background-size: cover;
+    margin-top: 150px;
+    /* margin-bottom: 70px; */
+
+
+}
+
+
+.service-title {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 50px;
+    text-align: center;
+    color: #353535;
+    padding: 70px 0px 40px;
+}
+
+
+.service-dis {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 180%;
+    text-align: center;
+    color: #7a7a7a;
+    margin-top: 0px;
+}
+
+.box-shadow1 {
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 20px;
+    justify-content: center;
+    margin-top: 70px;
+    padding: 30px 80px;
+}
+
+.designing {
+    /* border: 0.10px solid #353535; */
+    border-radius: 12px;
+    width: 350px;
+    height: 422px;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.06);
+    background: #fff;
+    text-align: center;
+}
+
+.designing1 {
+    box-shadow: 0px 4px 10px 0 rgba(0, 0, 0, 0.06);
+    background: linear-gradient(151deg, #fc0 0%, #ffe476 98.84%);
+    /* border: 0.10px solid #353535; */
+    border-radius: 12px;
+    width: 392px;
+    height: 448px;
+    text-align: center;
+}
+
+.design-title {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 180%;
+    text-align: center;
+    color: #353535;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.designing1 img {
+    margin-top: 32px;
+}
+
+.design-greeting {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 180%;
+    text-align: center;
+    color: #7a7a7a;
+}
+
+.designing img {
+    margin-top: 32px;
+}
+
+/* my services ended here */
+
+/* valuable feedback related styles started here */
+#valuable {
+    margin-top: 103px;
+}
+
+.value {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 135%;
+    color: #353535;
+}
+
+.values {
+    padding: 5px 90px;
+}
+
+.values img {
+    margin-top: 60px;
+}
+
+.feedback img {
+    margin-top: 40px;
+}
+
+.feedback {
+    display: flex;
+    gap: 99px;
+}
+
+.feedback-content {
+    margin-top: 220px;
+}
+
+.feed-greet {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 200%;
+    color: #7a7a7a;
+}
+
+.feed-tit {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 200%;
+    color: black;
+    margin-top: 24px;
+}
+
+.feed-dis {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
+    color: #7a7a7a;
+}
+
+.value-title {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 180%;
+    color: #7a7a7a;
+    margin-top: 13px;
+
+}
+
+/* valuable feedback related styles ended here */
+/* my blog post related styles started here */
+.blog-title {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 135%;
+    text-align: right;
+    color: #353535;
+    margin-top: 91px;
+
+}
+
+.grid-contain {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 112px;
+    gap: 41px;
+}
+
+.grid {
+    display: flex;
+    gap: 34px;
+}
+
+.grid-title-con {
+    display: flex;
+    gap: 25px;
+}
+
+.heading5 {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 190%;
+    color: #353535;
+    margin-top: 13px;
+    margin-bottom: 64px;
+}
+
+.span {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 190%;
+    color: #353535;
+
+}
+
+/* my blog post related styles ended here */
+/* main section section end here */
+
+/* Subs section */
+#subscribe {
+    background-image: linear-gradient(130deg, #fc0 0%, #fff5cb 100%);
+    border-radius: 30px;
+    background-size: cover;
+    margin-top: 166px;
+}
+
+.subscribe-content {
+    width: 50%;
+    padding: 60px 50px;
+}
+
+.subscribe-img {
+    width: 50%;
+    padding: 90px 80px;
+    text-align: center;
+    position: relative;
+}
+
+.subscribe-img input {
+    border-radius: 16px;
+    width: 60%;
+    padding: 23px 27px;
+    border: none;
+}
+
+
+.subscribe-img a {
+    padding: 20px 15px;
+    margin-right: 40px;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    border: none;
+    background-color: #FF6565;
+    position: absolute;
+    top: 90px;
+    right: 30;
+    color: #F4F3F3;
+    font-size: 16px;
+    font-weight: 500;
+
+}
+
+.sub-title {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 200%;
+    color: #353535;
+}
+
+input::placeholder {
+    color: #7A7A7A;
+    font-size: 1.125rem;
+}
+
+.sub-con {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 200%;
+    color: #353535;
+}
+
+.sub-greet {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 200%;
+    color: #353535;
+}
+
+/* Footer */
+#foot {
+    background: #575757;
+    background-size: cover;
+    margin-top: 152px;
+}
+
+.rowing {
+    display: flex;
+    padding: 60px 80px;
+}
+
+.left {
+    width: 30%;
+}
+
+.center {
+    width: 40%;
+}
+
+.right {
+    width: 30%;
+
+}
+
+.sp {
+    color: #FFCC00;
+}
+
+.left-cont {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 180%;
+    text-align: justify;
+    color: #858484;
+
+}
+
+.left-greet {
+    color: #f7f4f4;
+}
+
+.left-dis {
+    margin-top: 120px;
+}
+
+.center-con {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 200%;
+    color: #fff;
+}
+
+.center-greet {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 180%;
+    text-align: justify;
+    color: #bbb9b9;
+}
+
+.center-dis {
+    margin-top: 30px;
+}
+
+.right-content {
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    gap: 24px;
+}
+
+.btn2 {
+    background-color: var(--primarycolor);
+    border-radius: 15px;
+    font-weight: 500;
+    font-size: 15px;
+    color: white;
+    padding: 15px 25px;
+    display: inline-block;
+    margin: 70px;
+    margin-left: 100px;
+}
+
+.right-tit {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 180%;
+    text-align: justify;
+    color: #fff;
+}
